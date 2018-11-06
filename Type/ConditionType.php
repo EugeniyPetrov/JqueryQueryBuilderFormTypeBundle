@@ -14,6 +14,7 @@ class ConditionType extends AbstractType
     {
         $resolver->setDefaults([
             'default' => new \stdClass(),
+            'error_bubbling' => false,
         ]);
     }
 
