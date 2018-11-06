@@ -1,11 +1,11 @@
 {% block condition_widget %}
-    {% spaceless %}
-        <div class="form-group row">
-            {{ form_widget(form) }}
-            {{ form_label(form) }}
-            <div class="col-sm-11">
-                <div class="query-builder" data-input-id="{{ id }}"></div>
-            </div>
+    <div class="form-group row">
+        {{ form_label(form) }}
+        {{ form_widget(form) }}
+        <div class="{% block form_group_class %}col-sm-11{% endblock %}">
+            <div class="query-builder" data-input-id="{{ id }}"></div>
+            {{ form_errors(form) }}
+            {{ form_help(form) }}
         </div>
-    {% endspaceless %}
+    </div>
 {% endblock %}
