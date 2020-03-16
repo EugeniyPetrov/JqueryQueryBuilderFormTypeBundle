@@ -3,7 +3,7 @@
         {{ form_label(form) }}
         {{ form_widget(form) }}
         <div class="{% block form_group_class %}col-sm-11{% endblock %}">
-            <div class="query-builder" data-input-id="{{ id }}"></div>
+            <div class="query-builder-wrap" data-input-id="{{ id }}"></div>
             {{ form_errors(form) }}
             {{ form_help(form) }}
         </div>
