@@ -4,9 +4,9 @@
   "license": "MIT",
   "type": "symfony-bundle",
   "require": {
-    "php": "^7.2",
-    "symfony/form": "^4.1",
-    "symfony/framework-bundle": "^4.1",
+    "php": ">=7.2.0,<8.2.0",
+    "symfony/form": "^4.1 || ^5.4",
+    "symfony/framework-bundle": "^4.1 || ^5.4",
     "twig/twig": "^2.5"
   },
   "autoload": {
